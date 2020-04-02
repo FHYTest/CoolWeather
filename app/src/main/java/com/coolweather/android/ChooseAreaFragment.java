@@ -106,7 +106,7 @@ public class ChooseAreaFragment extends Fragment {
     }
 
     private void queryProvinces(){
-        titleText.setText("China");
+        titleText.setText("中国");
         backButton.setVisibility(View.GONE);
         provinceList = DataSupport.findAll(Province.class);
         if (provinceList.size() > 0){
@@ -212,7 +212,7 @@ public class ChooseAreaFragment extends Fragment {
     private void showProgressDialog(){
         if (progressDialog == null) {
             progressDialog = new ProgressDialog(getActivity());
-            progressDialog.setMessage("Loading......");
+            progressDialog.setMessage("正在加载…");
             progressDialog.setCanceledOnTouchOutside(false);
         }
     }
